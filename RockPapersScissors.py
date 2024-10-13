@@ -21,24 +21,24 @@ elif x ==1:
 else:
     p2="scissor"
 print("Your welcome to my Rock Scissor Paper game")
-p1 = input(" Humen player  enter your choice : ")
+p1 = input(" Humen player  enter your choice : ").lower()
 print ( "Computer Moved " + p2 )
 if p1 == p2 :
     print("Tie")
 elif p1 =="rock":
     if p2 =="paper":
         print("Computer wins")
-    if p2 == "scissor":
+    else:
         print("Humen Wins")
 elif p1 =="paper":
     if p2 =="scissor":
         print("Computer wins")
-    if p2 == "rock":
+    else:
         print("Humen Wins")
 elif p1 =="scissor":
     if p2 =="rock":
         print("Computer wins")
-    if p2 == "paper":
+    else:
         print("Humen Wins")
 else:
     print("Someting went wrong")
