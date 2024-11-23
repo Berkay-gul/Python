@@ -34,7 +34,6 @@ class Deck:
         def shuffle(self):
              if self.count()<52:
                   raise ValueError ("Sadece bütün bir deste karilabilir")
-
              shuffle(self.cards)
         def deal_card(self):
              return self._deal(1)[0] 
