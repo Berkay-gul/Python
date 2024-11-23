@@ -1,6 +1,6 @@
 from random import shuffle 
 class Card:
-    def __init__(self,suit , value):
+    def __init__(self,value ,suit ):
         self.value =value
         self.suit = suit
         #
@@ -35,7 +35,7 @@ class Deck:
              if self.count()<52:
                   raise ValueError ("Sadece bütün bir deste karilabilir")
 
-             return shuffle(self.cards)
+             shuffle(self.cards)
         def deal_card(self):
              return self._deal(1)[0] 
         def deal_hand(self,size):
